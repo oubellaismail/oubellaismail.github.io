@@ -1,63 +1,235 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Oubella Ismail</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oubella Ismail · DevSecOps & Platform Engineer</title>
+  <meta name="description" content="Oubella Ismail: DevSecOps and platform engineering student at ENSA Agadir. Secure-by-default Kubernetes platforms, CI/CD, GitOps, IaC and observability.">
+  <meta name="theme-color" content="#05070b">
+  <meta property="og:title" content="Oubella Ismail · DevSecOps & Platform Engineer">
+  <meta property="og:description" content="I secure what others deploy. Kubernetes, CI/CD, GitOps, supply-chain security and observability.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 50'%3E%3Cpath fill='%23f5c518' d='M50 12l-3-3-2-8-3 9C30 10 20 2 2 8c8 3 11 9 11 15 6-3 12-1 15 5 4-5 10-6 14-2 3 4 5 10 8 22 3-12 5-18 8-22 4-4 10-3 14 2 3-6 9-8 15-5 0-6 3-12 11-15C80 2 70 10 58 10l-3-9-2 8z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="gotham" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <div id="loader" aria-hidden="true">
+    <svg viewBox="0 0 100 50" class="loader-bat"><use href="#bat"/></svg>
+    <span>Gotham is waking up…</span>
+  </div>
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="bat" viewBox="0 0 100 50">
+      <path fill="currentColor" d="M50 12l-3-3-2-8-3 9C30 10 20 2 2 8c8 3 11 9 11 15 6-3 12-1 15 5 4-5 10-6 14-2 3 4 5 10 8 22 3-12 5-18 8-22 4-4 10-3 14 2 3-6 9-8 15-5 0-6 3-12 11-15C80 2 70 10 58 10l-3-9-2 8z"/>
+    </symbol>
+  </svg>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  <header class="nav">
+    <a href="#top" class="brand" aria-label="Back to top">
+      <svg viewBox="0 0 100 50"><use href="#bat"/></svg>
+      <span>OI</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" href="Oubella_Ismail_CV.pdf" download>CV</a>
+  </header>
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/IMG_1158\ 2.jpeg);"></div>
-							<h1><span>Oubella Ismail</span></h1>
-							<h3><span>CS Student</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://twitter.com/oubellaismail_"><i class="bi bi-twitter-x"></i></a></li>
-									<li><a href="https://github.com/oubellaismail"><i class="icon-github2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/oubellaismail/"><i class="icon-linkedin2"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<!-- Bootstrap -->
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow"><span class="dot"></span>Open to a PFE internship · January 2027</p>
+      <h1>Oubella<br>Ismail</h1>
+      <p class="tagline">I secure what others deploy.</p>
+      <p class="lead">DevSecOps &amp; Platform Engineer · Cybersecurity engineering student at ENSA Agadir</p>
+      <div class="cta">
+        <a class="btn" href="Oubella_Ismail_CV.pdf" download>Download CV</a>
+        <a class="btn btn-ghost" href="#contact">Send the signal</a>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">scroll into the city<span></span></div>
+    </section>
 
-	<script src="js/main.js"></script>
+    <!-- ABOUT -->
+    <section id="about" class="panel reveal">
+      <h2><span class="num">01</span>About</h2>
+      <p class="big">I build secure-by-default delivery platforms on Kubernetes, with CI/CD, GitOps, policy-as-code, supply-chain security and observability wired in from day one.</p>
+      <p>I'm strong in Terraform and Ansible infrastructure-as-code and cloud infrastructure, and I bring a cybersecurity engineering background to every pipeline I touch. I'm looking for an end-of-studies internship (PFE) starting <strong>January 2027</strong>, where I can own reliability and security end to end.</p>
+
+      <div class="stats">
+        <div><b>3</b><span>internships</span></div>
+        <div><b>200+</b><span>concurrent CTF users served</span></div>
+        <div><b>6.18M</b><span>log events processed</span></div>
+        <div><b>97%</b><span>threat classification accuracy</span></div>
+      </div>
+
+      <h3>Education</h3>
+      <div class="edu">
+        <div>
+          <h4>National School of Applied Sciences (ENSA)</h4>
+          <p>Engineering Degree in Cybersecurity &amp; Digital Trust</p>
+          <span class="meta">Agadir, Morocco · Sep 2024 – Present</span>
+        </div>
+        <div>
+          <h4>Higher School of Technology (EST)</h4>
+          <p>DUT in Computer Science</p>
+          <span class="meta">Essaouira, Morocco · Sep 2022 – Jun 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel reveal">
+      <h2><span class="num">02</span>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head">
+            <h3>DevSecOps / Platform Security Engineer Intern</h3>
+            <span class="meta">Jul 2026 – Aug 2026</span>
+          </div>
+          <p class="org">Onedustry Technologies · Casablanca (Remote)</p>
+          <ul>
+            <li>Built a secure-by-default Kubernetes delivery platform (a reusable “paved road”) so every onboarded project inherits scanning, signed artifacts, policy enforcement, runtime protection and observability instead of wiring security by hand.</li>
+            <li>Authored a STRIDE threat model mapping every trust boundary (code, build, artifact, admission, runtime, network, secrets) to a concrete control, and validated each control adversarially by demonstrating blocked attacks.</li>
+            <li>Hardened the CI pipeline with fail-closed security gates: SAST (Semgrep), SCA (OWASP Dependency-Check), secret scanning (Gitleaks) and container scanning (Trivy, Hadolint).</li>
+            <li>Secured the software supply chain end to end: SBOM generation (Syft), keyless image signing and signed SBOM attestations (Cosign/Sigstore), with build-once, promote-by-digest releases following SLSA principles.</li>
+            <li>Delivered pull-based GitOps with ArgoCD plus policy-as-code admission (Kyverno) that rejects unsigned or non-compliant workloads; added runtime and network defense (Falco eBPF, Cilium) and secrets management (External Secrets Operator + Infisical).</li>
+            <li>Wired observability (Prometheus, Loki, Grafana) with alerting, and packaged the platform as a Helm template with ADRs, a runbook and a demo.</li>
+          </ul>
+          <div class="tags"><span>Kubernetes</span><span>ArgoCD</span><span>Kyverno</span><span>Cosign</span><span>Falco</span><span>Cilium</span><span>Helm</span></div>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>DevSecOps Engineer Intern</h3>
+            <span class="meta">Jul 2025</span>
+          </div>
+          <p class="org">Youssra Trans-Négoce · Casablanca (Remote)</p>
+          <ul>
+            <li>Designed and implemented a secure CI/CD pipeline for a full-stack delivery tracking web app with GitHub Actions, integrating SAST (Semgrep), SCA (OWASP Dependency-Check, Dependabot), secrets detection (Gitleaks) and container scanning (Trivy).</li>
+            <li>Automated multi-environment infrastructure provisioning on DigitalOcean with Terraform (VPCs, bastion hosts, managed PostgreSQL, DNS records).</li>
+            <li>Configured Ansible roles for server hardening, Docker runtime setup and secure application deployment (backend, frontend, Nginx reverse proxy).</li>
+            <li>Implemented JWT-based authentication and role-based access control (RBAC) in the Spring Boot backend.</li>
+            <li>Documented the architecture, CI/CD workflows and IaC modules for team collaboration and audit readiness.</li>
+          </ul>
+          <div class="tags"><span>GitHub Actions</span><span>Terraform</span><span>Ansible</span><span>Spring Boot</span><span>DigitalOcean</span></div>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Back-End Developer Intern</h3>
+            <span class="meta">Apr 2024 – May 2024</span>
+          </div>
+          <p class="org">ENCG Agadir · Agadir</p>
+          <ul>
+            <li>Designed and built an inventory management application (Laravel) with optimized MySQL schemas.</li>
+            <li>Configured and maintained a secure, high-performing Linux server with Apache.</li>
+            <li>Developed and documented RESTful APIs (Postman) for seamless front-end integration.</li>
+          </ul>
+          <div class="tags"><span>Laravel</span><span>MySQL</span><span>Linux</span><span>Apache</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel reveal">
+      <h2><span class="num">03</span>Case files</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="case">Case file #01</span>
+          <h3>Infodays CTF Platform</h3>
+          <p class="sum">A scalable CTF platform serving 50+ teams and 200+ concurrent users with isolated, on-demand challenge environments.</p>
+          <ul>
+            <li>Provisioned Kubernetes with Terraform (DOKS, DNS, TLS, nginx ingress) and automated the full challenge deployment pipeline (CTFd + Kubernetes + flags) in Bash.</li>
+            <li>FastAPI microservice managing per-team pod lifecycle (deploy, suspend, scale) with strict RBAC and network isolation (Cilium).</li>
+            <li>Highly available data tier: MySQL GTID replication + ProxySQL read/write split + Redis (AOF).</li>
+            <li>Loki + Grafana for centralized logs and real-time observability across all namespaces.</li>
+          </ul>
+          <div class="tags"><span>Kubernetes</span><span>Terraform</span><span>FastAPI</span><span>MySQL</span><span>Redis</span><span>Grafana</span></div>
+        </article>
+        <article class="card">
+          <span class="case">Case file #02</span>
+          <h3>Cybersecurity Threat Detection Platform</h3>
+          <p class="sum">A Lambda Architecture platform processing 6.18M network log events through batch and real-time pipelines, with ML threat classification at 97% accuracy.</p>
+          <ul>
+            <li>Batch (HDFS + Spark + HBase) and streaming (Kafka + Spark Streaming + Cassandra) pipelines merged into unified threat scores.</li>
+            <li>FastAPI serving layer with 14 endpoints producing threat scores and blocking recommendations.</li>
+            <li>Grafana dashboard with Prometheus alerting: 4 threshold rules sending email alerts within 60 s of a breach.</li>
+            <li>One-command deployment (<code>make deploy-all</code>) on a 3-node DigitalOcean cluster with Terraform, 6 Ansible playbooks and Caddy HTTPS.</li>
+          </ul>
+          <div class="tags"><span>Spark</span><span>Kafka</span><span>FastAPI</span><span>Grafana</span><span>Terraform</span><span>Ansible</span></div>
+        </article>
+        <article class="card">
+          <span class="case">Case file #03</span>
+          <h3>3assasa-ecom</h3>
+          <p class="sum">An e-commerce backend built with Laravel 12, containerized and shipped automatically.</p>
+          <ul>
+            <li>User authentication, shopping cart, order tracking, discount management and per-order shipping addresses.</li>
+            <li>PayPal and Stripe payment gateway integration.</li>
+            <li>Dockerized, with a GitHub Actions CI/CD pipeline deploying to DigitalOcean.</li>
+          </ul>
+          <div class="tags"><span>Laravel 12</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span></div>
+        </article>
+      </div>
+      <a class="more" href="https://github.com/oubellaismail" target="_blank" rel="noopener">More on GitHub →</a>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel reveal">
+      <h2><span class="num">04</span>Arsenal</h2>
+      <div class="skills">
+        <div><h4>Cloud &amp; Containers</h4><p>Docker · Kubernetes · Helm · DigitalOcean</p></div>
+        <div><h4>IaC &amp; CI/CD</h4><p>Terraform · Ansible · GitHub Actions · ArgoCD (GitOps) · Nginx</p></div>
+        <div><h4>DevSecOps Tooling</h4><p>Semgrep · Gitleaks · OWASP Dependency-Check · Trivy · Falco · Cilium</p></div>
+        <div><h4>Supply Chain &amp; Secrets</h4><p>STRIDE threat modeling · SBOM (Syft) · Cosign/Sigstore · Kyverno · External Secrets Operator · Infisical</p></div>
+        <div><h4>Observability</h4><p>Prometheus · Grafana · Loki</p></div>
+        <div><h4>Systems &amp; Networking</h4><p>Linux administration · DNS (BIND) · LDAP · SSH · iptables/ufw</p></div>
+        <div><h4>Backend &amp; APIs</h4><p>Spring Boot · Laravel · FastAPI · NestJS · REST · JWT</p></div>
+        <div><h4>Programming</h4><p>Python · Bash · Java · C/C++ · SQL · YAML</p></div>
+        <div><h4>Databases</h4><p>PostgreSQL · MySQL · MongoDB · Redis</p></div>
+      </div>
+
+      <h3>Beyond the code</h3>
+      <ul class="vol">
+        <li><b>CTF Organizer &amp; Technical Team Member</b><span>Info Days Event, Agadir · Jan 2026 – Apr 2026</span></li>
+        <li><b>Training Lead</b><span>Cybersecurity Cell, AppsClubs, Agadir · Oct 2024 – May 2025</span></li>
+        <li><b>Organizer</b><span>DigiFest, GDG On Campus Universiapolis, Agadir · May 2025</span></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel reveal contact">
+      <h2><span class="num">05</span>Send the signal</h2>
+      <p class="big">Looking for a DevSecOps or platform engineering intern for your 2027 PFE? Let's talk.</p>
+      <div class="contact-grid">
+        <a href="mailto:oubellaismail00@gmail.com"><span>Email</span>oubellaismail00@gmail.com</a>
+        <a href="tel:+212655888706"><span>Phone</span>+212 655 888 706</a>
+        <a href="https://www.linkedin.com/in/oubellaismail" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/oubellaismail</a>
+        <a href="https://github.com/oubellaismail" target="_blank" rel="noopener"><span>GitHub</span>github.com/oubellaismail</a>
+      </div>
+      <a class="btn" href="Oubella_Ismail_CV.pdf" download>Download CV</a>
+    </section>
+  </main>
+
+  <footer>
+    <svg viewBox="0 0 100 50"><use href="#bat"/></svg>
+    <p>© 2026 Oubella Ismail · Built with Three.js · Gotham never sleeps.</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
 </html>
-
