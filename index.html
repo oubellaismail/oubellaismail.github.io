@@ -5,231 +5,341 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oubella Ismail · DevSecOps & Platform Engineer</title>
   <meta name="description" content="Oubella Ismail: DevSecOps and platform engineering student at ENSA Agadir. Secure-by-default Kubernetes platforms, CI/CD, GitOps, IaC and observability.">
-  <meta name="theme-color" content="#05070b">
+  <meta name="theme-color" content="#f2eddf">
   <meta property="og:title" content="Oubella Ismail · DevSecOps & Platform Engineer">
   <meta property="og:description" content="I secure what others deploy. Kubernetes, CI/CD, GitOps, supply-chain security and observability.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 50'%3E%3Cpath fill='%23f5c518' d='M50 12l-3-3-2-8-3 9C30 10 20 2 2 8c8 3 11 9 11 15 6-3 12-1 15 5 4-5 10-6 14-2 3 4 5 10 8 22 3-12 5-18 8-22 4-4 10-3 14 2 3-6 9-8 15-5 0-6 3-12 11-15C80 2 70 10 58 10l-3-9-2 8z'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='1' width='30' height='30' rx='5' fill='%23ff4d00' stroke='%23171411' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='Impact,sans-serif' font-size='16' text-anchor='middle' fill='%23fff'%3EOI%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
-    }
-  }
-  </script>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <canvas id="gotham" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-
-  <div id="loader" aria-hidden="true">
-    <svg viewBox="0 0 100 50" class="loader-bat"><use href="#bat"/></svg>
-    <span>Gotham is waking up…</span>
-  </div>
-
-  <svg width="0" height="0" style="position:absolute">
-    <symbol id="bat" viewBox="0 0 100 50">
-      <path fill="currentColor" d="M50 12l-3-3-2-8-3 9C30 10 20 2 2 8c8 3 11 9 11 15 6-3 12-1 15 5 4-5 10-6 14-2 3 4 5 10 8 22 3-12 5-18 8-22 4-4 10-3 14 2 3-6 9-8 15-5 0-6 3-12 11-15C80 2 70 10 58 10l-3-9-2 8z"/>
-    </symbol>
-  </svg>
-
   <header class="nav">
-    <a href="#top" class="brand" aria-label="Back to top">
-      <svg viewBox="0 0 100 50"><use href="#bat"/></svg>
-      <span>OI</span>
+    <a href="#top" class="logo" aria-label="Back to top">
+      <span class="logo-mark">OI</span>
+      <span class="logo-text">oubella.ismail</span>
     </a>
-    <nav>
+    <nav id="site-nav" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-contact">Contact</a>
     </nav>
-    <a class="btn btn-small" href="Oubella_Ismail_CV.pdf" download>CV</a>
+    <div class="nav-actions">
+      <a class="btn btn-hot btn-small" href="#contact">Hire me</a>
+      <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <p class="eyebrow"><span class="dot"></span>Open to a PFE internship · January 2027</p>
-      <h1>Oubella<br>Ismail</h1>
-      <p class="tagline">I secure what others deploy.</p>
-      <p class="lead">DevSecOps &amp; Platform Engineer · Cybersecurity engineering student at ENSA Agadir</p>
-      <div class="cta">
-        <a class="btn" href="Oubella_Ismail_CV.pdf" download>Download CV</a>
-        <a class="btn btn-ghost" href="#contact">Send the signal</a>
+      <div class="wrap">
+        <p class="tag tag-lime"><span class="pulse"></span>Open to a PFE internship · January 2027</p>
+        <h1>Oubella<br><em>Ismail.</em></h1>
+        <p class="lead">DevSecOps &amp; Platform Engineer. I build <u>secure-by-default</u> delivery platforms on Kubernetes, and I <u>secure what others deploy</u>.</p>
+        <div class="cta">
+          <a class="btn btn-hot" href="Oubella_Ismail_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="#experience">See the record <span aria-hidden="true">→</span></a>
+        </div>
       </div>
-      <div class="scroll-hint" aria-hidden="true">scroll into the city<span></span></div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="panel reveal">
-      <h2><span class="num">01</span>About</h2>
-      <p class="big">I build secure-by-default delivery platforms on Kubernetes, with CI/CD, GitOps, policy-as-code, supply-chain security and observability wired in from day one.</p>
-      <p>I'm strong in Terraform and Ansible infrastructure-as-code and cloud infrastructure, and I bring a cybersecurity engineering background to every pipeline I touch. I'm looking for an end-of-studies internship (PFE) starting <strong>January 2027</strong>, where I can own reliability and security end to end.</p>
+    <!-- STATS -->
+    <div class="stats" role="list">
+      <div role="listitem"><b>3</b><span>internships</span></div>
+      <div role="listitem"><b>200+</b><span>concurrent CTF users</span></div>
+      <div role="listitem"><b>6.18M</b><span>log events processed</span></div>
+      <div role="listitem"><b>97%</b><span>threat detection accuracy</span></div>
+    </div>
 
-      <div class="stats">
-        <div><b>3</b><span>internships</span></div>
-        <div><b>200+</b><span>concurrent CTF users served</span></div>
-        <div><b>6.18M</b><span>log events processed</span></div>
-        <div><b>97%</b><span>threat classification accuracy</span></div>
+    <!-- TICKER -->
+    <div class="ticker" aria-label="Recent highlights">
+      <span class="ticker-label"><span class="pulse"></span>Live</span>
+      <div class="ticker-track">
+        <ul>
+          <li>Building an AI vulnerability auto-patcher <small>now</small></li>
+          <li>Shipped a secure-by-default K8s platform <small>Jul 2026</small></li>
+          <li>Unsigned images rejected by Kyverno <small>always</small></li>
+          <li>SBOMs signed with Cosign <small>every build</small></li>
+          <li>Ran the Info Days CTF for 50+ teams <small>2026</small></li>
+          <li>Falco watching the runtime <small>24/7</small></li>
+          <li>Promote by digest, never by tag <small>SLSA</small></li>
+        </ul>
       </div>
+    </div>
 
-      <h3>Education</h3>
-      <div class="edu">
-        <div>
-          <h4>National School of Applied Sciences (ENSA)</h4>
-          <p>Engineering Degree in Cybersecurity &amp; Digital Trust</p>
-          <span class="meta">Agadir, Morocco · Sep 2024 – Present</span>
+    <!-- ABOUT -->
+    <section id="about" class="section section-sky">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Who's in<br>the arena</h2>
+          <p>Cybersecurity engineering student at ENSA Agadir, shipping platforms where security is the default, not an afterthought.</p>
         </div>
-        <div>
-          <h4>Higher School of Technology (EST)</h4>
-          <p>DUT in Computer Science</p>
-          <span class="meta">Essaouira, Morocco · Sep 2022 – Jun 2024</span>
+        <div class="box about-box reveal">
+          <p class="big">I build secure-by-default delivery platforms on Kubernetes, with CI/CD, GitOps, policy-as-code, supply-chain security and observability wired in from day one.</p>
+          <p>I'm strong in Terraform and Ansible infrastructure-as-code and cloud infrastructure, and I bring a cybersecurity engineering background to every pipeline I touch. I'm looking for an end-of-studies internship (PFE) starting <mark>January 2027</mark>, where I can own reliability and security end to end.</p>
+        </div>
+        <div class="edu">
+          <div class="box reveal">
+            <span class="pill pill-sky">Engineering degree</span>
+            <h3>National School of Applied Sciences (ENSA)</h3>
+            <p>Engineering Degree in Cybersecurity &amp; Digital Trust</p>
+            <span class="meta">Agadir, Morocco · Sep 2024 – Present</span>
+          </div>
+          <div class="box reveal">
+            <span class="pill pill-sky">DUT</span>
+            <h3>Higher School of Technology (EST)</h3>
+            <p>DUT in Computer Science</p>
+            <span class="meta">Essaouira, Morocco · Sep 2022 – Jun 2024</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="panel reveal">
-      <h2><span class="num">02</span>Experience</h2>
-      <ol class="timeline">
-        <li>
-          <div class="tl-head">
-            <h3>DevSecOps / Platform Security Engineer Intern</h3>
-            <span class="meta">Jul 2026 – Aug 2026</span>
-          </div>
-          <p class="org">Onedustry Technologies · Casablanca (Remote)</p>
-          <ul>
-            <li>Built a secure-by-default Kubernetes delivery platform (a reusable “paved road”) so every onboarded project inherits scanning, signed artifacts, policy enforcement, runtime protection and observability instead of wiring security by hand.</li>
-            <li>Authored a STRIDE threat model mapping every trust boundary (code, build, artifact, admission, runtime, network, secrets) to a concrete control, and validated each control adversarially by demonstrating blocked attacks.</li>
-            <li>Hardened the CI pipeline with fail-closed security gates: SAST (Semgrep), SCA (OWASP Dependency-Check), secret scanning (Gitleaks) and container scanning (Trivy, Hadolint).</li>
-            <li>Secured the software supply chain end to end: SBOM generation (Syft), keyless image signing and signed SBOM attestations (Cosign/Sigstore), with build-once, promote-by-digest releases following SLSA principles.</li>
-            <li>Delivered pull-based GitOps with ArgoCD plus policy-as-code admission (Kyverno) that rejects unsigned or non-compliant workloads; added runtime and network defense (Falco eBPF, Cilium) and secrets management (External Secrets Operator + Infisical).</li>
-            <li>Wired observability (Prometheus, Loki, Grafana) with alerting, and packaged the platform as a Helm template with ADRs, a runbook and a demo.</li>
-          </ul>
-          <div class="tags"><span>Kubernetes</span><span>ArgoCD</span><span>Kyverno</span><span>Cosign</span><span>Falco</span><span>Cilium</span><span>Helm</span></div>
-        </li>
-        <li>
-          <div class="tl-head">
-            <h3>DevSecOps Engineer Intern</h3>
-            <span class="meta">Jul 2025</span>
-          </div>
-          <p class="org">Youssra Trans-Négoce · Casablanca (Remote)</p>
-          <ul>
-            <li>Designed and implemented a secure CI/CD pipeline for a full-stack delivery tracking web app with GitHub Actions, integrating SAST (Semgrep), SCA (OWASP Dependency-Check, Dependabot), secrets detection (Gitleaks) and container scanning (Trivy).</li>
-            <li>Automated multi-environment infrastructure provisioning on DigitalOcean with Terraform (VPCs, bastion hosts, managed PostgreSQL, DNS records).</li>
-            <li>Configured Ansible roles for server hardening, Docker runtime setup and secure application deployment (backend, frontend, Nginx reverse proxy).</li>
-            <li>Implemented JWT-based authentication and role-based access control (RBAC) in the Spring Boot backend.</li>
-            <li>Documented the architecture, CI/CD workflows and IaC modules for team collaboration and audit readiness.</li>
-          </ul>
-          <div class="tags"><span>GitHub Actions</span><span>Terraform</span><span>Ansible</span><span>Spring Boot</span><span>DigitalOcean</span></div>
-        </li>
-        <li>
-          <div class="tl-head">
-            <h3>Back-End Developer Intern</h3>
-            <span class="meta">Apr 2024 – May 2024</span>
-          </div>
-          <p class="org">ENCG Agadir · Agadir</p>
-          <ul>
-            <li>Designed and built an inventory management application (Laravel) with optimized MySQL schemas.</li>
-            <li>Configured and maintained a secure, high-performing Linux server with Apache.</li>
-            <li>Developed and documented RESTful APIs (Postman) for seamless front-end integration.</li>
-          </ul>
-          <div class="tags"><span>Laravel</span><span>MySQL</span><span>Linux</span><span>Apache</span></div>
-        </li>
-      </ol>
+    <section id="experience" class="section section-cream">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The record</h2>
+          <p>Three internships, ranked by most recent. Every one shipped something real.</p>
+        </div>
+        <ol class="board">
+          <li class="row reveal">
+            <span class="rank">#1</span>
+            <div class="row-main">
+              <h3>DevSecOps / Platform Security Engineer Intern</h3>
+              <p class="org">Onedustry Technologies · Casablanca (Remote)</p>
+              <ul>
+                <li>Built a secure-by-default Kubernetes delivery platform (a reusable “paved road”) so every onboarded project inherits scanning, signed artifacts, policy enforcement, runtime protection and observability instead of wiring security by hand.</li>
+                <li>Authored a STRIDE threat model mapping every trust boundary (code, build, artifact, admission, runtime, network, secrets) to a concrete control, and validated each control adversarially by demonstrating blocked attacks.</li>
+                <li>Hardened the CI pipeline with fail-closed security gates: SAST (Semgrep), SCA (OWASP Dependency-Check), secret scanning (Gitleaks) and container scanning (Trivy, Hadolint).</li>
+                <li>Secured the software supply chain end to end: SBOM generation (Syft), keyless image signing and signed SBOM attestations (Cosign/Sigstore), with build-once, promote-by-digest releases following SLSA principles.</li>
+                <li>Delivered pull-based GitOps with ArgoCD plus policy-as-code admission (Kyverno) that rejects unsigned or non-compliant workloads; added runtime and network defense (Falco eBPF, Cilium) and secrets management (External Secrets Operator + Infisical).</li>
+                <li>Wired observability (Prometheus, Loki, Grafana) with alerting, and packaged the platform as a Helm template with ADRs, a runbook and a demo.</li>
+              </ul>
+              <div class="chips"><span>Kubernetes</span><span>ArgoCD</span><span>Kyverno</span><span>Cosign</span><span>Falco</span><span>Cilium</span><span>Helm</span></div>
+            </div>
+            <div class="row-side">
+              <span class="label">When</span><b>Jul – Aug 2026</b>
+              <span class="label">Track</span><span class="pill pill-sky">Platform security</span>
+            </div>
+          </li>
+          <li class="row reveal">
+            <span class="rank">#2</span>
+            <div class="row-main">
+              <h3>DevSecOps Engineer Intern</h3>
+              <p class="org">Youssra Trans-Négoce · Casablanca (Remote)</p>
+              <ul>
+                <li>Designed and implemented a secure CI/CD pipeline for a full-stack delivery tracking web app with GitHub Actions, integrating SAST (Semgrep), SCA (OWASP Dependency-Check, Dependabot), secrets detection (Gitleaks) and container scanning (Trivy).</li>
+                <li>Automated multi-environment infrastructure provisioning on DigitalOcean with Terraform (VPCs, bastion hosts, managed PostgreSQL, DNS records).</li>
+                <li>Configured Ansible roles for server hardening, Docker runtime setup and secure application deployment (backend, frontend, Nginx reverse proxy).</li>
+                <li>Implemented JWT-based authentication and role-based access control (RBAC) in the Spring Boot backend.</li>
+                <li>Documented the architecture, CI/CD workflows and IaC modules for team collaboration and audit readiness.</li>
+              </ul>
+              <div class="chips"><span>GitHub Actions</span><span>Terraform</span><span>Ansible</span><span>Spring Boot</span><span>DigitalOcean</span></div>
+            </div>
+            <div class="row-side">
+              <span class="label">When</span><b>Jul 2025</b>
+              <span class="label">Track</span><span class="pill pill-sky">DevSecOps</span>
+            </div>
+          </li>
+          <li class="row reveal">
+            <span class="rank">#3</span>
+            <div class="row-main">
+              <h3>Back-End Developer Intern</h3>
+              <p class="org">ENCG Agadir · Agadir</p>
+              <ul>
+                <li>Designed and built an inventory management application (Laravel) with optimized MySQL schemas.</li>
+                <li>Configured and maintained a secure, high-performing Linux server with Apache.</li>
+                <li>Developed and documented RESTful APIs (Postman) for seamless front-end integration.</li>
+              </ul>
+              <div class="chips"><span>Laravel</span><span>MySQL</span><span>Linux</span><span>Apache</span></div>
+            </div>
+            <div class="row-side">
+              <span class="label">When</span><b>Apr – May 2024</b>
+              <span class="label">Track</span><span class="pill pill-sky">Backend</span>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="panel reveal">
-      <h2><span class="num">03</span>Case files</h2>
-      <div class="cards">
-        <article class="card">
-          <span class="case">Case file #01</span>
-          <h3>Infodays CTF Platform</h3>
-          <p class="sum">A scalable CTF platform serving 50+ teams and 200+ concurrent users with isolated, on-demand challenge environments.</p>
-          <ul>
-            <li>Provisioned Kubernetes with Terraform (DOKS, DNS, TLS, nginx ingress) and automated the full challenge deployment pipeline (CTFd + Kubernetes + flags) in Bash.</li>
-            <li>FastAPI microservice managing per-team pod lifecycle (deploy, suspend, scale) with strict RBAC and network isolation (Cilium).</li>
-            <li>Highly available data tier: MySQL GTID replication + ProxySQL read/write split + Redis (AOF).</li>
-            <li>Loki + Grafana for centralized logs and real-time observability across all namespaces.</li>
-          </ul>
-          <div class="tags"><span>Kubernetes</span><span>Terraform</span><span>FastAPI</span><span>MySQL</span><span>Redis</span><span>Grafana</span></div>
+    <section id="projects" class="section section-paper">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Case files</h2>
+          <p>Six projects, built end to end: infrastructure, pipelines and the app on top. The newest one is still in the works.</p>
+        </div>
+
+        <article class="card card-feature reveal">
+          <div class="feature-head">
+            <span class="card-num">01</span>
+            <span class="tag tag-lime"><span class="pulse"></span>Now building · Sprint 2 of 6</span>
+          </div>
+          <div class="feature-body">
+            <div>
+              <h3>Auto-Patching: AI Vulnerability Remediation</h3>
+              <p class="sum">A team pipeline that finds vulnerabilities in uploaded code, has a local LLM write the fix, and only accepts patches that pass in a sandbox. Anything doubtful goes to a human.</p>
+              <ul>
+                <li>FastAPI job API with language detection, a Streamlit upload page, and SAST scanning with Semgrep, Bandit, Flawfinder and cppcheck (Python and C).</li>
+                <li>Fixes generated by Qwen2.5-Coder running locally through Ollama, so source code never leaves the machine.</li>
+                <li>My seat: LoRA fine-tuning. Compared base models (Qwen2.5-Coder 3B / 7B, DeepSeek-Coder), costed GPU options and set up training on Kaggle (2× T4).</li>
+              </ul>
+              <div class="chips"><span>Python</span><span>FastAPI</span><span>Ollama</span><span>Qwen2.5-Coder</span><span>LoRA</span><span>Semgrep</span><span>Docker</span></div>
+            </div>
+            <ol class="flow" aria-label="Pipeline stages">
+              <li><b>Upload</b><span>file in, language detected</span></li>
+              <li><b>Scan</b><span>SAST findings</span></li>
+              <li><b>Patch</b><span>LLM writes a diff</span></li>
+              <li><b>Sandbox</b><span>build + tests in Docker</span></li>
+              <li class="flow-end"><b>Decide</b><span>accepted or needs a human</span></li>
+            </ol>
+          </div>
         </article>
-        <article class="card">
-          <span class="case">Case file #02</span>
-          <h3>Cybersecurity Threat Detection Platform</h3>
-          <p class="sum">A Lambda Architecture platform processing 6.18M network log events through batch and real-time pipelines, with ML threat classification at 97% accuracy.</p>
-          <ul>
-            <li>Batch (HDFS + Spark + HBase) and streaming (Kafka + Spark Streaming + Cassandra) pipelines merged into unified threat scores.</li>
-            <li>FastAPI serving layer with 14 endpoints producing threat scores and blocking recommendations.</li>
-            <li>Grafana dashboard with Prometheus alerting: 4 threshold rules sending email alerts within 60 s of a breach.</li>
-            <li>One-command deployment (<code>make deploy-all</code>) on a 3-node DigitalOcean cluster with Terraform, 6 Ansible playbooks and Caddy HTTPS.</li>
-          </ul>
-          <div class="tags"><span>Spark</span><span>Kafka</span><span>FastAPI</span><span>Grafana</span><span>Terraform</span><span>Ansible</span></div>
-        </article>
-        <article class="card">
-          <span class="case">Case file #03</span>
-          <h3>3assasa-ecom</h3>
-          <p class="sum">An e-commerce backend built with Laravel 12, containerized and shipped automatically.</p>
-          <ul>
-            <li>User authentication, shopping cart, order tracking, discount management and per-order shipping addresses.</li>
-            <li>PayPal and Stripe payment gateway integration.</li>
-            <li>Dockerized, with a GitHub Actions CI/CD pipeline deploying to DigitalOcean.</li>
-          </ul>
-          <div class="tags"><span>Laravel 12</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span></div>
-        </article>
+
+        <div class="cards">
+          <article class="card card-lime reveal">
+            <span class="card-num">02</span>
+            <h3>Infodays CTF Platform</h3>
+            <p class="sum">A scalable CTF platform serving 50+ teams and 200+ concurrent users with isolated, on-demand challenge environments.</p>
+            <ul>
+              <li>Provisioned Kubernetes with Terraform (DOKS, DNS, TLS, nginx ingress) and automated the full challenge deployment pipeline (CTFd + Kubernetes + flags) in Bash.</li>
+              <li>FastAPI microservice managing per-team pod lifecycle (deploy, suspend, scale) with strict RBAC and network isolation (Cilium).</li>
+              <li>Per-team HMAC flags with anti-cheating checks and audit logging, plus a custom CTFd plugin (Flask + JS) for live instance control.</li>
+              <li>Highly available data tier: MySQL GTID replication + ProxySQL read/write split + Redis (AOF).</li>
+              <li>Loki + Grafana for centralized logs and real-time observability across all namespaces.</li>
+            </ul>
+            <div class="chips"><span>Kubernetes</span><span>Terraform</span><span>FastAPI</span><span>MySQL</span><span>Redis</span><span>Grafana</span></div>
+          </article>
+          <article class="card card-sky reveal">
+            <span class="card-num">03</span>
+            <h3>Cybersecurity Threat Detection Platform</h3>
+            <p class="sum">A Lambda Architecture platform processing 6.18M network log events through batch and real-time pipelines, with ML threat classification at 97% accuracy.</p>
+            <ul>
+              <li>Batch (HDFS + Spark + HBase) and streaming (Kafka + Spark Streaming + Cassandra) pipelines merged into unified threat scores.</li>
+              <li>FastAPI serving layer with 14 endpoints producing threat scores and blocking recommendations.</li>
+              <li>Grafana dashboard with Prometheus alerting: 4 threshold rules sending email alerts within 60 s of a breach.</li>
+              <li>One-command deployment (<code>make deploy-all</code>) on a 3-node DigitalOcean cluster with Terraform, 6 Ansible playbooks and Caddy HTTPS.</li>
+            </ul>
+            <div class="chips"><span>Spark</span><span>Kafka</span><span>FastAPI</span><span>Grafana</span><span>Terraform</span><span>Ansible</span></div>
+          </article>
+          <article class="card card-peach reveal">
+            <span class="card-num">04</span>
+            <h3>3assasa-ecom</h3>
+            <p class="sum">An e-commerce backend built with Laravel 12, containerized and shipped automatically.</p>
+            <ul>
+              <li>User authentication, shopping cart, order tracking, discount management and per-order shipping addresses.</li>
+              <li>PayPal and Stripe payment gateway integration.</li>
+              <li>Dockerized, with a GitHub Actions CI/CD pipeline deploying to DigitalOcean.</li>
+            </ul>
+            <div class="chips"><span>Laravel 12</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span></div>
+          </article>
+          <article class="card card-sky reveal">
+            <span class="card-num">05</span>
+            <h3>Study With Me</h3>
+            <p class="sum">A full-stack web app that helps students study more effectively, built as a team.</p>
+            <ul>
+              <li>Built and secured the backend with NestJS, with database operations through Prisma and PostgreSQL.</li>
+              <li>Integrated the Next.js frontend and containerized the whole app with Docker for consistent environments.</li>
+            </ul>
+            <div class="chips"><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>Next.js</span><span>Docker</span></div>
+          </article>
+          <article class="card card-lime reveal">
+            <span class="card-num">06</span>
+            <h3>Quiz Game</h3>
+            <p class="sum">A desktop quiz game on IT topics, built in Java as a team.</p>
+            <ul>
+              <li>Game logic with user levels, difficulty-based progression, multiple question types and personal profiles.</li>
+              <li>MySQL storage for questions, users and scores; Maven for dependencies; JavaFX interface.</li>
+            </ul>
+            <div class="chips"><span>Java</span><span>JavaFX</span><span>Maven</span><span>MySQL</span></div>
+          </article>
+          <a class="card card-more reveal" href="https://github.com/oubellaismail" target="_blank" rel="noopener">
+            <span class="more-icon" aria-hidden="true">↗</span>
+            <b>More on GitHub</b>
+            <span>Every repository, including school work</span>
+          </a>
+        </div>
       </div>
-      <a class="more" href="https://github.com/oubellaismail" target="_blank" rel="noopener">More on GitHub →</a>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="panel reveal">
-      <h2><span class="num">04</span>Arsenal</h2>
-      <div class="skills">
-        <div><h4>Cloud &amp; Containers</h4><p>Docker · Kubernetes · Helm · DigitalOcean</p></div>
-        <div><h4>IaC &amp; CI/CD</h4><p>Terraform · Ansible · GitHub Actions · ArgoCD (GitOps) · Nginx</p></div>
-        <div><h4>DevSecOps Tooling</h4><p>Semgrep · Gitleaks · OWASP Dependency-Check · Trivy · Falco · Cilium</p></div>
-        <div><h4>Supply Chain &amp; Secrets</h4><p>STRIDE threat modeling · SBOM (Syft) · Cosign/Sigstore · Kyverno · External Secrets Operator · Infisical</p></div>
-        <div><h4>Observability</h4><p>Prometheus · Grafana · Loki</p></div>
-        <div><h4>Systems &amp; Networking</h4><p>Linux administration · DNS (BIND) · LDAP · SSH · iptables/ufw</p></div>
-        <div><h4>Backend &amp; APIs</h4><p>Spring Boot · Laravel · FastAPI · NestJS · REST · JWT</p></div>
-        <div><h4>Programming</h4><p>Python · Bash · Java · C/C++ · SQL · YAML</p></div>
-        <div><h4>Databases</h4><p>PostgreSQL · MySQL · MongoDB · Redis</p></div>
-      </div>
+    <section id="skills" class="section section-cream">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Arsenal</h2>
+          <p>The tools I reach for, grouped by where they sit in the pipeline: from the first commit to the running cluster.</p>
+        </div>
+        <div class="skills">
+          <div class="box reveal"><h3>Cloud &amp; Containers</h3><div class="chips"><span>Docker</span><span>Kubernetes (DOKS)</span><span>Helm</span><span>DigitalOcean</span><span>Virtualization (VMs, NAT/bridged)</span></div></div>
+          <div class="box reveal"><h3>IaC &amp; CI/CD</h3><div class="chips"><span>Terraform</span><span>Ansible</span><span>GitHub Actions</span><span>ArgoCD (GitOps)</span><span>Jenkins (concepts)</span></div></div>
+          <div class="box reveal"><h3>DevSecOps Tooling</h3><div class="chips"><span>Semgrep</span><span>Gitleaks</span><span>OWASP Dependency-Check</span><span>Trivy</span><span>Hadolint</span><span>Falco</span><span>Cilium</span></div></div>
+          <div class="box reveal"><h3>Supply Chain &amp; Secrets</h3><div class="chips"><span>STRIDE threat modeling</span><span>SBOM (Syft)</span><span>Cosign/Sigstore</span><span>Kyverno</span><span>External Secrets Operator</span><span>Infisical</span></div></div>
+          <div class="box reveal"><h3>Security Foundations</h3><div class="chips"><span>OWASP Top 10 mitigation</span><span>System hardening</span><span>Network security</span><span>Cryptography fundamentals</span><span>RBAC</span><span>JWT authentication</span></div></div>
+          <div class="box reveal"><h3>Observability</h3><div class="chips"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Alerting</span></div></div>
+          <div class="box reveal"><h3>Systems &amp; Networking</h3><div class="chips"><span>Linux administration</span><span>DNS (BIND)</span><span>LDAP (OpenLDAP)</span><span>SSH</span><span>iptables/ufw</span><span>Squid proxy</span><span>NFS</span><span>Disk quotas</span><span>Nginx</span><span>Apache</span><span>Caddy</span></div></div>
+          <div class="box reveal"><h3>Web Development</h3><div class="chips"><span>Spring Boot</span><span>Laravel</span><span>FastAPI</span><span>NestJS</span><span>Flask</span><span>REST APIs</span><span>Prisma</span><span>Next.js</span><span>HTML/CSS</span><span>JavaFX</span></div></div>
+          <div class="box reveal"><h3>Data &amp; AI</h3><div class="chips"><span>Spark</span><span>Kafka</span><span>HDFS</span><span>Machine learning fundamentals</span><span>Deep learning basics</span><span>LLMs (Ollama)</span><span>LoRA fine-tuning</span></div></div>
+          <div class="box reveal"><h3>Programming</h3><div class="chips"><span>Python</span><span>Bash</span><span>Java</span><span>PHP</span><span>C/C++</span><span>JavaScript</span><span>SQL</span><span>YAML</span><span>Assembly</span></div></div>
+          <div class="box reveal"><h3>Databases</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>Cassandra</span><span>HBase</span></div></div>
+          <div class="box reveal"><h3>Tools &amp; Methods</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Postman</span><span>Apidog</span><span>Maven</span><span>Markdown</span><span>Agile</span><span>Technical documentation</span></div></div>
+        </div>
 
-      <h3>Beyond the code</h3>
-      <ul class="vol">
-        <li><b>CTF Organizer &amp; Technical Team Member</b><span>Info Days Event, Agadir · Jan 2026 – Apr 2026</span></li>
-        <li><b>Training Lead</b><span>Cybersecurity Cell, AppsClubs, Agadir · Oct 2024 – May 2025</span></li>
-        <li><b>Organizer</b><span>DigiFest, GDG On Campus Universiapolis, Agadir · May 2025</span></li>
-      </ul>
+        <div class="box box-lime vol reveal">
+          <h3 class="vol-title">Beyond the code</h3>
+          <ul>
+            <li><b>CTF Organizer &amp; Technical Team Member</b><span>Info Days Event, Agadir · Jan 2026 – Apr 2026</span></li>
+            <li><b>Training Lead</b><span>Cybersecurity Cell, AppsClubs, Agadir · Oct 2024 – May 2025</span></li>
+            <li><b>Organizer</b><span>DigiFest, GDG On Campus Universiapolis, Agadir · May 2025</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="panel reveal contact">
-      <h2><span class="num">05</span>Send the signal</h2>
-      <p class="big">Looking for a DevSecOps or platform engineering intern for your 2027 PFE? Let's talk.</p>
-      <div class="contact-grid">
-        <a href="mailto:oubellaismail00@gmail.com"><span>Email</span>oubellaismail00@gmail.com</a>
-        <a href="tel:+212655888706"><span>Phone</span>+212 655 888 706</a>
-        <a href="https://www.linkedin.com/in/oubellaismail" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/oubellaismail</a>
-        <a href="https://github.com/oubellaismail" target="_blank" rel="noopener"><span>GitHub</span>github.com/oubellaismail</a>
+    <section id="contact" class="section section-hot">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Let's talk</h2>
+          <p>Looking for a DevSecOps or platform engineering intern for your 2027 PFE? One email is all it takes.</p>
+        </div>
+        <div class="mailbar">
+          <span class="mailbar-field">oubellaismail00@gmail.com</span>
+          <a class="mailbar-btn" href="mailto:oubellaismail00@gmail.com">Email me</a>
+        </div>
+        <div class="contact-grid">
+          <a class="box" href="tel:+212655888706"><span class="label">Phone</span>+212 655 888 706</a>
+          <a class="box" href="https://www.linkedin.com/in/oubellaismail" target="_blank" rel="noopener"><span class="label">LinkedIn</span>linkedin.com/in/oubellaismail</a>
+          <a class="box" href="https://github.com/oubellaismail" target="_blank" rel="noopener"><span class="label">GitHub</span>github.com/oubellaismail</a>
+          <a class="box" href="Oubella_Ismail_CV.pdf" download><span class="label">Résumé</span>Download the CV (PDF)</a>
+        </div>
       </div>
-      <a class="btn" href="Oubella_Ismail_CV.pdf" download>Download CV</a>
     </section>
   </main>
 
-  <footer>
-    <svg viewBox="0 0 100 50"><use href="#bat"/></svg>
-    <p>© 2026 Oubella Ismail · Built with Three.js · Gotham never sleeps.</p>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a href="#top" class="logo logo-inverse"><span class="logo-mark">OI</span><span class="logo-text">oubella.ismail</span></a>
+        <p>© 2026 Oubella Ismail · DevSecOps &amp; Platform Engineering</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </footer>
 
-  <script type="module" src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
